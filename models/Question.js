@@ -16,9 +16,9 @@ class Question{
 
   insert(){
     const sql = `INSERT INTO questions (id, content) VALUES (?,?)`
-    
+
     return new Promise(function(resolve){
-      db.run(sql,this.content)
+      db.run(sql,[this.id, this.content])
 
 
       resolve('something')
