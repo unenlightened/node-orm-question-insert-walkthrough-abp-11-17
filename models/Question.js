@@ -14,6 +14,13 @@ class Question{
     })
   }
 
+  static insert(){
+    return New Promise(function(resolve){
+      resolve('boop')
+    })
+    
+  }
+
   constructor(content){
     this.content = content
   }
