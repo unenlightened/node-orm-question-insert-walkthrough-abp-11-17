@@ -16,7 +16,7 @@ class Question{
 
   insert(){
     return new Promise(){
-      
+
     }
 
   }
