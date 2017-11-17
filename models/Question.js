@@ -21,7 +21,7 @@ class Question{
     return new Promise(function(resolve){
       db.run(sql,[self.id, self.content], function(){
         resolve('something')
-      })  
+      })
     })
 
   }
