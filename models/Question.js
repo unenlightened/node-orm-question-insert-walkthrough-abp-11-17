@@ -15,9 +15,9 @@ class Question{
   }
 
   insert(){
-    return new Promise(){
-
-    }
+    return new Promise(function(resolve){
+      resolve('something')
+    })
 
   }
 
