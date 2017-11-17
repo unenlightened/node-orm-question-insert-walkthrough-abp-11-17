@@ -14,6 +14,10 @@ class Question{
     })
   }
 
+  constructor(content){
+    this.content = content
+  }
+
   insert(){
     const self = this
     const sql = `INSERT INTO questions (content) VALUES (?)`
@@ -25,10 +29,6 @@ class Question{
       })
     })
 
-  }
-
-  constructor(content){
-    this.content = content
   }
 
 }
