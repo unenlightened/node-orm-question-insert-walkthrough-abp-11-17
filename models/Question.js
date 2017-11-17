@@ -15,10 +15,11 @@ class Question{
   }
 
   insert(){
+  
     return new Promise(function(resolve){
-      db.run(sql,content)
+      db.run(sql,this.content)
 
-
+ 
       resolve('something')
     })
 
