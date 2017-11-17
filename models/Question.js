@@ -20,7 +20,7 @@ class Question{
 
     return new Promise(function(resolve){
       db.run(sql, [self.id, self.content], function(){
-        self.id = this.id
+        self.id = this.lastID
         resolve('something')
       })
     })
