@@ -23,7 +23,7 @@ class Question{
     const sql = `INSERT INTO questions (content) VALUES (?)`
 
     return new Promise(function(resolve){
-      db.run(sql, [self.content], function(){
+      db.run(sql, [self.content], function(err, result){   //passed without err, result as parameters
         self.id = this.lastID
         resolve(self)
       })
