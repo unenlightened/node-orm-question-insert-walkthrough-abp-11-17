@@ -16,6 +16,9 @@ class Question{
 
   insert(){
     return new Promise(function(resolve){
+      db.run(sql,content)
+
+
       resolve('something')
     })
 
