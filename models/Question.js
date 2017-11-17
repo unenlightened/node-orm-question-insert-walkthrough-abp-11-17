@@ -15,7 +15,7 @@ class Question{
   }
 
   static insert(){
-  
+
 
   }
 
