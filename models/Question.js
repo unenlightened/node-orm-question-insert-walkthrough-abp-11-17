@@ -14,7 +14,7 @@ class Question{
     })
   }
 
-  insert(){
+  static insert(){
 
 
   }
