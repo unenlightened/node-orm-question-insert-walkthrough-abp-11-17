@@ -15,13 +15,13 @@ class Question{
   }
 
   insert(){
+    const self = this
     const sql = `INSERT INTO questions (id, content) VALUES (?,?)`
 
     return new Promise(function(resolve){
-      db.run(sql,[this.id, this.content])
-
-
-      resolve('something')
+      db.run(sql,[self.id, self.content], function(){
+        resolve('something')
+      })  
     })
 
   }
